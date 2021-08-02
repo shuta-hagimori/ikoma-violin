@@ -2,6 +2,12 @@
   text-align: center;
 }
 
+body {
+  font-size: 20px;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ",
+    "Meiryo, Osaka", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +41,11 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.timeline-Header {
+  display: none;
+}
+.timeline-Footer {
+  display: none;
 }
