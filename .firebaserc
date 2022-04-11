@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "ikoma-violin"
-  }
+    "default": "testviolin-2cf6a",
+    "staging": "testviolin-2cf6a"
+  },
+  "targets": {}
 }

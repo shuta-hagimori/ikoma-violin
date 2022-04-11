@@ -1,0 +1,159 @@
+body {
+  font-size: 20px;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ",
+    "Meiryo, Osaka", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  background-color: #f8fff8;
+}
+
+:root {
+  --main-color: #2e934d;
+  --text-color: #2b2b2b;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.timeline-Header {
+  display: none;
+}
+.timeline-Footer {
+  display: none;
+}
+
+.document {
+  text-align: left;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.slide {
+  animation-name: document;
+  animation-duration: 1s;
+}
+@keyframes document {
+  from {
+    transform: translateX(-15px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+
+.document > h2 {
+  color: var(--main-color);
+}
+
+.h2-slide {
+  animation-name: document-h2;
+  animation-duration: 0.8s;
+}
+
+@keyframes document-h2 {
+  from {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+
+.document {
+  color: var(--text-color);
+}
+
+.lesson {
+  flex-grow: 1;
+  border-radius: 16;
+  padding: 16px;
+  text-align: left;
+  margin: 16px;
+}
+
+.box {
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+.plan {
+  width: 200px;
+  display: inline-block;
+  margin-right: 15px;
+  box-shadow: 1px 1px 0px 0px #5b5b5b;
+  transition: transform 0.2s;
+  margin-bottom: 15px;
+}
+
+.planTop {
+  border: 2px solid #5b5b5b;
+  padding: 3px;
+  border-top-left-radius: 5;
+  border-top-right-radius: 5;
+  text-align: center;
+}
+
+.planPrice {
+  border: 2px solid #5b5b5b;
+  border-top: 0px;
+  color: #717171;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.plan:hover {
+  transform: scale(1.05);
+  z-index: 5;
+}
+
+.planRange {
+  color: rgb(238, 238, 238);
+  background-color: #25aa5a;
+  display: inline-block;
+  margin-right: 3px;
+  text-align: center;
+  font-size: 10px;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+}
+
+.header {
+  background-color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: fixed;
+  z-index: 30;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  text-align: center;
+  display: flex;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
